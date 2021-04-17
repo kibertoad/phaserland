@@ -1,11 +1,11 @@
-import Phaser from 'phaser';
-import logoImg from './assets/logo.png';
+import { Game } from 'phaser';
+const logoImg = require('./assets/logo.png');
 
 class MyGame extends Phaser.Scene
 {
     constructor ()
     {
-        super();
+        super({});
     }
 
     preload ()
@@ -36,4 +36,4 @@ const config = {
     scene: MyGame
 };
 
-const game = new Phaser.Game(config);
+const game = new Game(config);
